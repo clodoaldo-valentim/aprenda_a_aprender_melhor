@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121904678-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121904678-1');
+</script>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Teste o seu perfil de estudante, através de uma rápida entrevista, o usuário receberá um retorno do seu perfil como estudante e descubrirá porque não está aprendendo.">
+    <meta name="author" content="Clodoaldo Valentim">
+	<meta name="robots" content="index, follow"/>
+	<meta name="copyright" content="© 2018 Clodoaldo Valentim" />
+	<meta http-equiv="cache-control"   content="max-age=86400" />
+	<meta name="google" content="translate" />
+	<meta name="google" content="sitelinkssearchbox" />
+	<meta name="googlebot" content="index, follow" />
+    <title>Perfil do estudante</title>    
+<style>
+.video{
+   border: 0.5px solid;
+   padding: 10px;
+   box-shadow: 5px 10px 40px;
+   
+  }
+</style>
+<body id="page-top">
+    <!-- Navigation -->
+	<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+	  <img class="img-fluid mb-5 d-block mx-auto" src="img/logo_aprenda.png" style="width:10%;">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">Aprenda a estudar</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-5 px-0 px-lg-5 rounded js-scroll-trigger" href="index.html#portfolio">Roteiro</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-5 px-0 px-lg-5 rounded js-scroll-trigger" href="#about">Sobre</a>
+            </li>
+			<li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-5 px-0 px-lg-5 rounded js-scroll-trigger" href="videos.html">Vídeos</a>
+            </li>
+			<li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-5 px-0 px-lg-5 rounded js-scroll-trigger" href="podcast.html">Podcast</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-5 px-0 px-lg-5 rounded js-scroll-trigger" href="index.html#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	</div>
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <img class="img-fluid mb-5 d-block mx-auto" src="img/videos.png" alt="" style="width:20%;">
+        <h1 class="text-uppercase mb-0">Teste de perfil do estudante</h1>
+        <hr class="star-light">
+        <h2 class="font-weight-light mb-0">Descubra qual o seu perfil de estudante</h2>
+      </div>
+    </header><br>
+<div class="container-fluid">
+<div id="form">
+<form action= "teste.php" method="post">
+Nome:<input type="text" name="nome" size="45" />&nbsp;
+Email:<input type="text" name="email" size="45"/>&nbsp;
+Cleluar:<input type="text" name="celular" size="15"/><br><br>
+Idade:
+<select name="idade">
+  <option value="10_12">Entre 10 e 12 anos</option>
+  <option value="13_15">Entre 13 e 15 anos</option>
+  <option value="16_18">Entre 16 e 18 anos</option>
+  <option value="19_25">Entre 19 e 25 anos</option>
+  <option value="26_30">Entre 26 e 30 anos</option>
+  <option value="31_39">Entre 31 e 39 anos</option>
+  <option value="40_45">Entre 40 a 45 anos</option>
+  <option value="46_50">Entre 46 a 50 anos</option>
+  <option value="51_55">Entre 51 a 55</option>
+  <option value="56_60">Entre 56 a 60</option>  
+  <option value="mais_de_61">Mais de 61</option>  
+</select>
+&nbsp;
+Raça:
+<select name="raca">
+  <option value="negra">Negra</option>
+  <option value="branca">Branca</option>
+  <option value="pardo">Pardo</option>
+  <option value="indio">Índio</option>  
+</select>
+<br><br>
+Escolaridade:
+<select name="escolaridade">
+  <option value="escolha">Escolha uma das opções</option>
+  <option value="ensino_fundamental_estudando">Ensino Fundamental Estudando</option>
+  <option value="ensino_fundamental_incompleto">Ensino Fundamental Incompleto</option>
+  <option value="ensino_fundamental_completo">Ensino Fundamental Completo</option>
+  <option value="ensino_medio_estudando">Ensino Médio Estudando</option>
+  <option value="ensino_medio_incompleto">Ensino Médio Incompleto</option>
+  <option value="ensino_medio_completo">Ensino Médio Completo</option>
+  <option value="ensino_superior_estudando">Ensino Superior Estudando</option>
+  <option value="ensino_superior_incompleto">Ensino Superior Incompleto</option>
+  <option value="ensino_superior_completo">Ensino Superior Completo</option>  
+</select>
+<br><br>
+Pretende fazer:
+<select name="pretende_fazer">
+  <option value="escolha">Escolha uma das opções</option>
+  <option value="enem">ENEM</option>
+  <option value="vestibular">Vestibular</option>
+  <option value="concurso">Concurso Público</option>
+  <option value="apenas_curioso">Apenas curioso</option>
+  <option value="quero_aprender">Quero Aprender</option>  
+</select>
+<br/><br/>
+<table>
+
+
+<p><b><font size="+1" color="#FF3333" face="Arial, Helvetica, sans-serif">Técnicas para ler e tomar apontamento</font></b></p>
+<br/>
+<tr>
+<p>Tenho que reler um texto várias para entende-lo</p> SIM<input type="radio" name="q1" value="1" /> 
+NÃo<input type="radio" name="q1" value="3"/> Às vezes<input type="radio" name="q1" value="2" />
+<br/>
+</tr>
+
+<tr>
+<br>
+<p>É difícil perceber os pontos importantes</p> SIM <input type="radio" name="q2" value="1" /> 
+NÃo<input type="radio" name="q2" value="3"/> Às vezes<input type="radio" name="q2" value="2" />
+</tr>
+<br/>
+<tr>
+<br>
+<p>Procuro no dicionário as palavras que não conheço</p> SIM <input type="radio" name="q3" value="3"/> 
+NÃo<input type="radio" name="q3" value="1"/> Às vezes<input type="radio" name="q3" value="2" />
+</tr>
+<br/>
+<tr>
+<br>
+<p>Reviso a matéria estudada</p> SIM <input type="radio" name="q4" value="3"/> 
+NÃo<input type="radio" name="q4" value="1"/> Às vezes<input type="radio" name="q4" value="2" />
+</tr>
+<br/>
+<tr>
+<br>
+<p>Quando anoto o que o professor disse, perco algo que ele está dizendo</p> SIM <input type="radio" name="q5" value="1"/> 
+NÃo<input type="radio" name="q5" value="3"/> Às vezes<input type="radio" name="q5" value="2" />
+</tr>
+<br /><br />
+<hr 50%  color="#336600" align="center"/>
+<p><b><font size="+1" color="#FF3333" face="Arial, Helvetica, sans-serif">Hábitos de concentração</font></b></p>
+<br/>
+<tr>
+<p>É difícil concentrar-me no que estou estudando, Depois que termino não sei o que li</p> SIM<input type="radio" name="q6" value="1"/> 
+NÃo<input type="radio" name="q6" value="3"/> Às vezes<input type="radio" name="q6" value="2" />
+</tr>
+<br/>
+<tr>
+<br>
+<p>Tenho tendência a "sonhar" quando estou estudando?</p> SIM <input type="radio" name="q7" value="1"/> 
+NÃo<input type="radio" name="q7" value="3"/> Às vezes<input type="radio" name="q7" value="2" />
+</tr>
+<br/>
+<tr>
+<br>
+<p>Demoro muito para acordar e estar pronto para trabalhar?</p> SIM <input type="radio" name="q8" value="1"/> 
+NÃo<input type="radio" name="q8" value="3"/> Às vezes<input type="radio" name="q8" value="2" />
+</tr>
+<br/>
+<p>Tenho que estar inspirado para começar a estudar e com isso perco muito tempo?</p> SIM <input type="radio" name="q9" value="1"/> 
+NÃo<input type="radio" name="q9" value="3"/> Às vezes<input type="radio" name="q9" value="2" />
+
+<br/>
+<tr>
+<br>
+<p>Assisto TV antes de começar a estudar</p> SIM <input type="radio" name="q10" value="1"/> 
+NÃo<input type="radio" name="q10" value="3"/> Às vezes<input type="radio" name="q10" value="2"/>
+</tr>
+<br /><br />
+<hr 50%  color="#336600" align="center"/>
+
+<p><b><font size="+1" color="#FF3333" face="Arial, Helvetica, sans-serif">Distribuições de tempo e relações sociais durante o estudo</font></b></p>
+<br/>
+<tr>
+<br>
+<p>As horas parecem curtas para me concentrar ou me sentir com vontade de estudar?</p> SIM <input type="radio" name="q11" value="1"/> 
+NÃo<input type="radio" name="q11" value="3"/> Às vezes<input type="radio" name="q11" value="2" />
+</tr>
+<br/>
+<tr>
+<br>
+<p>Meu tempo não está bem distribuido, Dedico muito tempo para algumascoisas e pouco para outras?</p> SIM <input type="radio" name="q12" value="1"/> 
+NÃo<input type="radio" name="q12" value="3"/> Às vezes<input type="radio" name="q12" value="2" />
+</tr>
+<br/>
+<tr>
+<br>
+<p>Minhas horas de estudos são interrompidas por telefonemas, visitas e barulhos que me distraem?</p> SIM <input type="radio" name="q13" value="1"/> 
+NÃo<input type="radio" name="q13" value="3"/> Às vezes<input type="radio" name="q13" value="2" />
+</tr>
+<br/>
+<tr>
+<br>
+<p>Tenho dificuldade de concluir um trabalho no prazo certo, por isso fica por terminar, malfeito ou em atraso?</p> SIM <input type="radio" name="q14" value="1"/> 
+NÃo<input type="radio" name="q14" value="3"/> Às vezes<input type="radio" name="q14" value="2" />
+</tr>
+<br/>
+<tr>
+<br>
+<p>Não consigo estudar sozinho; apenas com outros?</p> SIM <input type="radio" name="q15" value="1"/> 
+NÃo<input type="radio" name="q15" value="3"/> Às vezes<input type="radio" name="q15" value="2" />
+</tr>
+<tr>
+<br>
+<p>Gosto muito de ficar "sem fazer nada" e isso perturba meus estudos?</p> SIM <input type="radio" name="q16" value="1"/> 
+NÃo<input type="radio" name="q16" value="3"/> Às vezes<input type="radio" name="q16" value="2" />
+</tr>
+<br/>
+<tr>
+<br>
+<p>Antes de estudar em grupo, procuro ver a matéria sozinho?</p> SIM <input type="radio" name="q17" value="3"/> 
+NÃo<input type="radio" name="q17" value="1"/> Às vezes<input type="radio" name="q17" value="2" />
+</tr>
+<br/>
+<tr>
+<br>
+<p>Ocupo muito o meu tempo vendo a TV, lendo ou dormindo?</p> SIM <input type="radio" name="q18" value="1"/> 
+NÃo<input type="radio" name="q18" value="3"/> Às vezes<input type="radio" name="q18" value="2" />
+</tr>
+<br/>
+<tr>
+<br>
+<p>Minha vida social é muito intensa: Festas, passeios e encontros? Tenho pouco tempo para estudar?</p> SIM <input type="radio" name="q19" value="1"/> 
+NÃo<input type="radio" name="q19" value="3"/> Às vezes<input type="radio" name="q19"value="2" /><br/><br/>
+</tr>
+<br/>
+<p><b><font size="+1" color="#FF3333" face="Arial, Helvetica, sans-serif">Hábitos Gerais de Estudo</font></b></p>
+<p>Fico nervoso nas provas: "dá um branco", esqueço tudo e não consigo dizer ou escrever o que aprendi?</p>
+SIM <input type="radio" name="q20" value="1"/> 
+NÃo<input type="radio" name="q20" value="3"/> Às vezes<input type="radio" name="q20"value="2" /><br/><br/>
+<p>Antes de começar a escrever uma redação ou uma prova subjetiva, preparo mentalmente o que vou responder?</p>
+SIM <input type="radio" name="q21" value="3"/> 
+NÃo<input type="radio" name="q21" value="1"/> Às vezes<input type="radio" name="q21"value="2" /><br/><br/>
+<p>Termino minhas provas escritas rapidamente e entrego-as sem revisar o que fiz?</p>
+SIM <input type="radio" name="q22" value="1"/> 
+NÃo<input type="radio" name="q22" value="3"/> Às vezes<input type="radio" name="q22"value="2" /><br/><br/>
+<p>Procuro entender cada ponto da matéria à medida que vou estudando, para não ter que voltar atrás para esclarecer pontos duvidosos?</p>
+SIM <input type="radio" name="q23" value="3"/> 
+NÃo<input type="radio" name="q23" value="1"/> Às vezes<input type="radio" name="q23"value="2" /><br/><br/>
+<p>Trato de relacionar os assuntos que se estudam em uma matéria com os outros de diferentes materias</p>
+SIM <input type="radio" name="q24" value="3"/> 
+NÃo<input type="radio" name="q24" value="1"/> Às vezes<input type="radio" name="q24"value="2" /><br/><br/>
+<p>Procuro resumir, classificar e sistematizar os fatos aprendidos, associando-os com matérias e fatos que estudei anteriormente?</p>
+SIM <input type="radio" name="q25" value="3"/> 
+NÃo<input type="radio" name="q25" value="1"/> Às vezes<input type="radio" name="q25"value="2" /><br/><br/>
+<p>TRato de estudar apenas o indispensável para o teste?</p>
+SIM <input type="radio" name="q26" value="1"/> 
+NÃo<input type="radio" name="q26" value="3"/> Às vezes<input type="radio" name="q26"value="2" /><br/><br/>
+<p>Quando preciso de conhecimento das matérias básicas que já estudei, tenho a impressão que já não sei mais nada?</p>
+SIM <input type="radio" name="q27" value="1"/> 
+NÃo<input type="radio" name="q27" value="3"/> Às vezes<input type="radio" name="q27"value="2" /><br/><br/>
+<p>Antes de começar a fazer as provas, leio cuidadosamente as instruções</p>
+SIM <input type="radio" name="q28" value="3"/> 
+NÃo<input type="radio" name="q28" value="1"/> Às vezes<input type="radio" name="q28"value="2" /><br/><br/>
+<p>Quando não gosto de uma matéria ou de um professor, não consigo estudar o assunto?</p>
+SIM <input type="radio" name="q29" value="1"/> 
+NÃo<input type="radio" name="q29" value="3"/> Às vezes<input type="radio" name="q29"value="2" /><br/><br/>
+<p>Sinto-me sempre cansado, com sono ou indiferente para assimilar os assuntos?</p>
+SIM <input type="radio" name="q30" value="1"/> 
+NÃo<input type="radio" name="q30" value="3"/> Às vezes<input type="radio" name="q30"value="2" /><br/><br/>
+
+
+</table>
+<input type="submit" class="btn-danger" name="Enviar" value="Enviar"/> <input type="reset" class="btn-danger" name="Limpar" Value="Limpar"/>
+
+<br /><br />
+<hr 50%  color="#336600" align="center"/>
+</form>
+</div>
+</div>
+    <!-- Rodapé -->
+<footer class="footer text-center">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-lg-0">
+		  <a href="http://www.aprendaaquicursos.com.br/">
+            <img class="img-fluid mb-5 d-block mx-auto" src="img/logo_aprenda_branco.png" style="width:50%;" alt="Imgaem da logo do site">
+			</a>
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Nos encontre na Web</h4>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-google-plus"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-dribbble"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-uppercase mb-4">Sobre o criador</h4>
+            <p class="lead mb-0">Clodoaldo Valentim
+              <a href="http://clodoaldovalentim.aprenda.890m.com/">Conheça-me</a>.</p>
+          </div>
+        </div>
+    </div>
+</footer>
+
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; clodoaldovalentim.aprenda.890m.com 2018</small>
+      </div>
+    </div>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>    
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+	<!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+</body>
+</html>

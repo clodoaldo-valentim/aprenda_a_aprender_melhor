@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121904678-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121904678-1');
+</script>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Aprenda a aprender - Agenda, o objetivo é fazer com que o usuário perceba de forma visível onde está investindo mais o seu tempo e dessa forma possa administrar melhor esse tempo.">
+    <meta name="author" content="Clodoaldo Valentim">	
+	<meta name="robots" content="index, follow"/>
+	<meta name="copyright" content="© 2018 Clodoaldo Valentim" />
+	<meta http-equiv="cache-control"   content="max-age=86400" />
+	<meta name="google" content="translate" />
+	<meta name="google" content="sitelinkssearchbox" />
+	<meta name="googlebot" content="index, follow" />
+    <title>Agenda do estudante</title>    
+<style>
+.video{
+   border: 0.5px solid;
+   padding: 10px;
+   box-shadow: 5px 10px 40px;
+   
+  }
+</style>
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+	  <img class="img-fluid mb-5 d-block mx-auto" src="img/logo_aprenda.png" style="width:10%;">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">Aprenda a estudar</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-5 px-0 px-lg-5 rounded js-scroll-trigger" href="index.html#portfolio">Roteiro</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-5 px-0 px-lg-5 rounded js-scroll-trigger" href="#about">Sobre</a>
+            </li>
+			<li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-5 px-0 px-lg-5 rounded js-scroll-trigger" href="videos.html">Vídeos</a>
+            </li>
+			<li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-5 px-0 px-lg-5 rounded js-scroll-trigger" href="podcast.html">Podcast</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-5 px-0 px-lg-5 rounded js-scroll-trigger" href="index.html#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<br>
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <img class="img-fluid mb-5 d-block mx-auto" src="img/agenda.png" alt="" style="width:20%;">
+        <h1 class="text-uppercase mb-0">Sua agenda Semanal</h1>
+        <hr class="star-light">
+        <h2 class="font-weight-light mb-0">Preencha a agenda com suas atividades diárias e verifique o que você precisa priorisar</h2>
+      </div>
+    </header><br>
+	<div class="container-fluid">
+	<p style="text-align:justify;">O aluno deve preencher o quadro que segue registrando nele as previsões para o estudo semanal, incluindo sábados.
+   Ele registra em cada dia os intervalos destinados às atividades ficas que tem, como desrertar, higiene, refeição, horário das aulas, deslocamentos, descanso, cursos, esportes etc... Assim o aluno conhece o tempo que lhe resta para o estudo e determina os horários para estudar cada disciplina, levando em conta a proximidade com a aula dada em sala, seu maior ou menos grau de dificuldade e as diferentes formas de raciocinio exigidas. Evitando associar matérias com racicionios iguais.</p>
+	</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="form_agenda">
+<form name="myForm" action="js/total.js" onsubmit="return validateForm()" method="post">
+<div class="table-responsive">
+<table class="table table-hover" bgcolor="#66CC00" align="center">
+<br />
+<tr bgcolor="#FFFFCC">
+
+<th>
+<P><b><font face="Arial Black, Gadget, sans-serif" size="+2"><center>Hora/Dia</center></font>
+</th>
+
+<th>
+<P><b><font face="Arial Black, Gadget, sans-serif" size="+2"><center>Segunda</center></font>
+</th>
+<th>
+<P><b><font face="Arial Black, Gadget, sans-serif" size="+2"><center>Terca</center></font>
+</th>
+<th>
+<P><b><font face="Arial Black, Gadget, sans-serif" size="+2"><center>Quarta</center></font>
+</th>
+
+<th>
+<P><b><font face="Arial Black, Gadget, sans-serif" size="+2"><center>Quinta</center></font>
+</th>
+<th>
+<P><b><font face="Arial Black, Gadget, sans-serif" size="+2"><center>Sexta</center></font>
+</th>
+<th>
+<P><b><font face="Arial Black, Gadget, sans-serif" size="+2"><center>Sábado</center></font>
+</th>
+
+
+</tr>
+
+<br />
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>07h</center></font>
+</td>
+
+<td>
+<select name="q1">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q2">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q3">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+<td>
+<select name="q4">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q5">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q6">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>08h</center></font>
+</td>
+
+<td>
+<select name="q7">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+</td>
+<td>
+<select name="q8">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q9">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+
+<td>
+<select name="q10">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q11">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q12">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>09h</center></font>
+</td>
+
+<td>
+<select name="q13">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+
+</td>
+<td>
+<select name="q14">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q15">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+
+<td>
+<select name="q16">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q17">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q18">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>10h</center></font>
+</td>
+
+<td>
+<select name="q19">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+
+</td>
+<td>
+<select name="q20">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q21">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+
+<td>
+<select name="q22">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q23">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q24">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>11h</center></font>
+</td>
+
+<td>
+<select name="q25">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shoppingg
+
+</select>
+
+</td>
+<td>
+<select name="q26">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q27">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+
+<td>
+<select name="q28">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q29">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q30">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>12h</center></font>
+</td>
+
+<td>
+<select name="q31">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+
+</td>
+<td>
+<select name="q32">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q33">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+
+<td>
+<select name="q34">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q35">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q36">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>13h</center></font>
+</td>
+
+<td>
+<select name="q37">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+
+</td>
+<td>
+<select name="q38">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q39">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+
+<td>
+<select name="q40">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q41">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q42">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>14h</center></font>
+</td>
+
+<td>
+<select name="q43">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+
+</td>
+<td>
+<select name="q44">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q45">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+
+<td>
+<select name="q46">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q47">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+<td>
+<select name="q48">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>15h</center></font>
+</td>
+
+<td>
+<select name="q49">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+
+</td>
+<td>
+<select name="q50">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="51">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+<td>
+<select name="q52">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q53">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q54">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>16h</center></font>
+</td>
+
+<td>
+<select name="q55">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+</td>
+<td>
+<select name="q56">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q57">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+<td>
+<select name="q58">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q59">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q60">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>17h</center></font>
+</td>
+
+<td>
+<select name="q61">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+</td>
+<td>
+<select name="q62">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q63">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+<td>
+<select name="q64">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="65">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q66">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>18h</center></font>
+</td>
+
+<td>
+<select name="q67">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+</td>
+<td>
+<select name="q68">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q69">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+<td>
+<select name="q70">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shoppingg
+</select>
+</td>
+<td>
+<select name="q71">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q72">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>19h</center></font>
+</td>
+
+<td>
+<select name="q73">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+</td>
+<td>
+<select name="q74">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q75">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+<td>
+<select name="q76">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q77">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q78">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>20h</center></font>
+</td>
+
+<td>
+<select name="q79">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+</td>
+<td>
+<select name="q80">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q81">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+<td>
+<select name="q82">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q83">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q84">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>21h</center></font>
+</td>
+
+<td>
+<select name="q85">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+</td>
+<td>
+<select name="q86">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q87">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+<td>
+<select name="q88">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q89">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q90">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>22h</center></font>
+</td>
+
+<td>
+<select name="q91">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+</td>
+<td>
+<select name="q92">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q93">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+<td>
+<select name="q94">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q95">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q96">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>23h</center></font>
+</td>
+
+<td>
+<select name="q97">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+</td>
+<td>
+<select name="q98">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q99">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+<td>
+<select name="q100">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q101">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q102">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+<td>
+<P><b><font face="Arial Black, Gadget, sans-serif"><center>24h</center></font>
+</td>
+
+<td>
+<select name="q103">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+
+</select>
+</td>
+<td>
+<select name="q104">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q105">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+<td>
+<select name="q106">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q107">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+<td>
+<select name="q108">
+<option value="1">Diversao
+<option value="1">Trabalho
+<option value="1">Familia
+<option value="1">Leitura
+<option value="1">Nada
+<option value="1">TV
+<option value="1">Facebook
+<option value="1">Shopping
+</select>
+</td>
+
+
+</tr>
+<tr bgcolor="#FFFFCC">
+
+
+</tr>
+</table>
+</div>
+<br>
+<div style="text-align:center;">
+<input class="btn-danger" type=submit value=Enviar>
+<input class="btn-danger" type=reset value=Limpar>
+<a href="#" onclick="window.print();">Imprimir Página</a>
+</div>
+<br>
+</form>
+</div>
+</div>
+</div>
+</div>
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-lg-0">
+		  <a href="http://www.aprendaaquicursos.com.br/">
+            <img class="img-fluid mb-5 d-block mx-auto" src="img/logo_aprenda_branco.png" style="width:50%;" alt="Imagem da logo do site">
+			</a>
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Nos encontre na Web</h4>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-google-plus"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-dribbble"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-uppercase mb-4">Sobre o criador</h4>
+            <p class="lead mb-0">Clodoaldo Valentim
+              <a href="clodoaldovalentim.aprenda.890m.com">Conheça-me</a>.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; www.clodoaldovalentim.aprenda.890m.com 2018</small>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+	<!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+  </body>
+
+</html>
